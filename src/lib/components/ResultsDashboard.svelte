@@ -280,9 +280,16 @@
 
 				<div class="rounded-2xl border border-white/10 bg-slate-800/50 p-6">
 					<div class="prose prose-invert max-w-none">
-						<pre
-							class="overflow-x-auto rounded-xl border border-white/10 bg-slate-900/80 p-6 font-mono text-sm leading-relaxed whitespace-pre-wrap text-blue-100">{insights
-								.insights.insightAgent.insights || 'Analysis in progress...'}</pre>
+						{#if insights.insights.insightAgent.insights}
+							{@html insights.insights.insightAgent.insights}
+						{:else}
+							<div class="rounded-xl border border-white/10 bg-slate-900/80 p-6">
+								<div class="flex items-center justify-center text-blue-200/80">
+									<div class="animate-spin mr-3 h-5 w-5 border-2 border-blue-400 border-t-transparent rounded-full"></div>
+									Analysis in progress...
+								</div>
+							</div>
+						{/if}
 					</div>
 				</div>
 			</div>

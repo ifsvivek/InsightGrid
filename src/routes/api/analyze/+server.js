@@ -690,7 +690,15 @@ Generate brief insights about:
 
 Available advanced visualizations include: Sankey diagrams, treemaps, network charts, parallel coordinates, violin plots, bullet charts, Gantt charts, heatmaps, and more.
 
-Keep it concise - 4-5 sentences maximum. Focus on insights that help users understand what the AI-generated advanced charts will show them.`;
+IMPORTANT: Return ONLY the HTML content using TailwindCSS classes for styling. Do not include any <script> tags, <style> tags, or JavaScript code. Structure your insights as a clean, well-formatted HTML section with:
+- Use semantic HTML elements like <div>, <h3>, <h4>, <p>, <ul>, <li>
+- Apply TailwindCSS classes for styling (text colors, spacing, background, borders, etc.)
+- Create an attractive, modern layout with proper spacing and visual hierarchy
+- Use TailwindCSS utility classes like: bg-gradient-to-r, text-gray-700, p-4, mb-3, rounded-lg, shadow-sm, etc.
+- Keep content concise - 4-5 sentences maximum
+- Focus on insights that help users understand what the AI-generated advanced charts will show them
+
+Return only the HTML markup with TailwindCSS classes, no additional text or explanations.`;
 
 	try {
 		const response = await model.invoke(prompt);

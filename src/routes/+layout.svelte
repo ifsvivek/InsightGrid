@@ -23,9 +23,6 @@
 					>
 						🧠
 					</div>
-					<div
-						class="absolute -inset-1 animate-pulse rounded-xl bg-gradient-to-r from-cyan-400 to-blue-500 opacity-75 blur-sm"
-					></div>
 				</div>
 				<div>
 					<h1

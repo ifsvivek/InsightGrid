@@ -1434,15 +1434,24 @@ function generateGaugeData(template, fullData) {
  * Generate data for Sankey diagram
  */
 function generateSankeyData(template, fullData) {
-	const { sourceAxis, targetAxis, valueAxis, colorScheme } = template;
+	// Map template fields to sankey-specific fields
+	const sourceAxis = template.sourceAxis || template.xAxis;
+	const targetAxis = template.targetAxis || template.yAxis;
+	const valueAxis = template.valueAxis || template.sizeAxis || template.yAxis;
+	const { colorScheme } = template;
+
+	if (!sourceAxis || !targetAxis) {
+		console.warn('Sankey chart requires sourceAxis/xAxis and targetAxis/yAxis');
+		return { nodes: [], links: [] };
+	}
 
 	const nodes = new Set();
 	const links = [];
 
 	// Collect all unique nodes
 	fullData.forEach(row => {
-		if (row[sourceAxis]) nodes.add(row[sourceAxis]);
-		if (row[targetAxis]) nodes.add(row[targetAxis]);
+		if (row[sourceAxis]) nodes.add(String(row[sourceAxis]));
+		if (row[targetAxis]) nodes.add(String(row[targetAxis]));
 	});
 
 	const nodeArray = Array.from(nodes);
@@ -1454,11 +1463,11 @@ function generateSankeyData(template, fullData) {
 	// Create links
 	const linkMap = {};
 	fullData.forEach(row => {
-		const source = row[sourceAxis];
-		const target = row[targetAxis];
-		const value = Number(row[valueAxis]) || 1;
+		const source = String(row[sourceAxis]);
+		const target = String(row[targetAxis]);
+		const value = valueAxis ? (Number(row[valueAxis]) || 1) : 1;
 
-		if (source && target) {
+		if (source && target && source !== target) {
 			const linkKey = `${source}->${target}`;
 			if (!linkMap[linkKey]) {
 				linkMap[linkKey] = {
@@ -1475,6 +1484,7 @@ function generateSankeyData(template, fullData) {
 		nodes: nodeArray.map((node, index) => ({
 			id: index,
 			label: String(node),
+			value: 0, // Will be calculated if needed
 			color: getColorFromScheme(colorScheme, index, 0.7)
 		})),
 		links: Object.values(linkMap)

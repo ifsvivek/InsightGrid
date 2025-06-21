@@ -63,21 +63,29 @@
 			}
 			
 			rectElement.style.backgroundColor = backgroundColor;
-			rectElement.style.width = `${Math.sqrt(percentage) * 10}%`;
-			rectElement.style.height = `${Math.sqrt(percentage) * 8}%`;
-			rectElement.style.minWidth = '60px';
-			rectElement.style.minHeight = '40px';
-			rectElement.style.maxWidth = '300px';
-			rectElement.style.maxHeight = '200px';
-			rectElement.style.margin = '2px';
-			rectElement.style.padding = '8px';
-			rectElement.style.border = '1px solid rgba(0,0,0,0.2)';
-			rectElement.style.borderRadius = '4px';
+			
+			// Calculate better proportional sizing
+			const scaleFactor = 2.5;
+			const minWidth = 120;
+			const maxWidth = 350;
+			const minHeight = 80;
+			const maxHeight = 250;
+			
+			const width = Math.min(maxWidth, Math.max(minWidth, Math.sqrt(percentage) * scaleFactor * 10));
+			const height = Math.min(maxHeight, Math.max(minHeight, Math.sqrt(percentage) * scaleFactor * 8));
+			
+			rectElement.style.width = width + 'px';
+			rectElement.style.height = height + 'px';
+			rectElement.style.margin = '6px';
+			rectElement.style.padding = '12px';
+			rectElement.style.border = '2px solid rgba(0,0,0,0.1)';
+			rectElement.style.borderRadius = '8px';
 			rectElement.style.display = 'flex';
 			rectElement.style.flexDirection = 'column';
 			rectElement.style.justifyContent = 'center';
 			rectElement.style.alignItems = 'center';
 			rectElement.style.textAlign = 'center';
+			rectElement.style.boxShadow = '0 2px 6px rgba(0,0,0,0.15)';
 			rectElement.style.cursor = 'pointer';
 			rectElement.style.transition = 'all 0.3s ease';
 			rectElement.style.overflow = 'hidden';
@@ -87,16 +95,21 @@
 			label.className = 'treemap-label';
 			label.style.color = '#fff';
 			label.style.fontWeight = 'bold';
-			label.style.fontSize = Math.max(10, Math.min(16, Math.sqrt(percentage))) + 'px';
+			label.style.fontSize = Math.max(12, Math.min(18, width / 8)) + 'px';
 			label.style.textShadow = '1px 1px 2px rgba(0,0,0,0.8)';
 			label.style.wordBreak = 'break-word';
+			label.style.lineHeight = '1.2';
 			label.textContent = item.label || '';
 
 			// Add value
 			const value = document.createElement('div');
 			value.className = 'treemap-value';
 			value.style.color = '#fff';
-			value.style.fontSize = Math.max(8, Math.min(12, Math.sqrt(percentage) * 0.8)) + 'px';
+			value.style.fontSize = Math.max(10, Math.min(14, width / 12)) + 'px';
+			value.style.textShadow = '1px 1px 2px rgba(0,0,0,0.8)';
+			value.style.marginTop = '4px';
+			value.style.fontWeight = '500';
+			value.textContent = item.value?.toLocaleString() || '';
 			value.style.textShadow = '1px 1px 2px rgba(0,0,0,0.8)';
 			value.style.marginTop = '2px';
 			value.textContent = item.value?.toLocaleString() || '';
@@ -138,9 +151,13 @@
 <style>
 	.treemap-container {
 		position: relative;
-		height: 400px;
+		height: 500px;
+		min-height: 400px;
 		width: 100%;
 		overflow: hidden;
+
+		background: #ffffff00;
+		box-shadow: 0 2px 8px rgba(0,0,0,0.1);
 	}
 
 	.treemap {
@@ -150,8 +167,10 @@
 		flex-wrap: wrap;
 		align-content: flex-start;
 		align-items: flex-start;
-		padding: 10px;
+		justify-content: flex-start;
+		padding: 15px;
 		box-sizing: border-box;
+		gap: 8px;
 	}
 
 	:global(.treemap-rect) {
