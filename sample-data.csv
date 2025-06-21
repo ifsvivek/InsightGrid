@@ -1,0 +1,13 @@
+Month,Sales,Customers,Revenue,Region,Product
+January,150,45,12500,North,Widget A
+February,175,52,14200,North,Widget A
+March,200,60,16800,North,Widget A
+April,180,55,15300,South,Widget B
+May,220,65,18700,South,Widget B
+June,195,58,16200,East,Widget A
+July,240,70,21000,East,Widget C
+August,210,62,17800,West,Widget B
+September,185,54,15600,North,Widget A
+October,230,68,19500,South,Widget C
+November,205,61,17200,East,Widget B
+December,250,75,22500,West,Widget C

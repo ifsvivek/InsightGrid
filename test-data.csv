@@ -1,0 +1,47 @@
+Date,Product,Sales,Quantity,Region,Category,Price,Cost,Margin,Customer_Type,Sales_Rep,Store_ID,Promotion,Payment_Method,Customer_Age,Customer_Gender,Weather,Temperature,Day_of_Week,Month,Quarter
+2024-01-01,Widget A,1200,15,North,Electronics,80.00,50.00,37.5,Premium,John Smith,ST001,New Year Sale,Credit Card,35,M,Sunny,22,Monday,January,Q1
+2024-01-02,Widget B,850,12,South,Home & Garden,70.83,45.00,36.5,Regular,Sarah Johnson,ST002,None,Debit Card,42,F,Cloudy,18,Tuesday,January,Q1
+2024-01-03,Widget A,1100,14,East,Electronics,78.57,50.00,36.4,Premium,Mike Davis,ST003,Winter Clearance,Cash,28,M,Rainy,15,Wednesday,January,Q1
+2024-01-04,Widget C,1350,18,West,Sports,75.00,55.00,26.7,VIP,Lisa Brown,ST004,None,Credit Card,31,F,Sunny,25,Thursday,January,Q1
+2024-01-05,Widget B,950,13,North,Home & Garden,73.08,45.00,38.5,Regular,John Smith,ST001,Flash Sale,PayPal,39,M,Cloudy,20,Friday,January,Q1
+2024-01-06,Widget A,1300,16,South,Electronics,81.25,50.00,38.5,Premium,Sarah Johnson,ST002,None,Credit Card,45,F,Sunny,28,Saturday,January,Q1
+2024-01-07,Widget C,1150,15,East,Sports,76.67,55.00,28.3,Regular,Mike Davis,ST003,Weekend Special,Debit Card,33,M,Partly Cloudy,23,Sunday,January,Q1
+2024-01-08,Widget B,900,11,West,Home & Garden,81.82,45.00,45.0,Premium,Lisa Brown,ST004,None,Cash,27,F,Rainy,16,Monday,January,Q1
+2024-01-09,Widget A,1250,16,North,Electronics,78.13,50.00,36.0,VIP,John Smith,ST001,Member Discount,Credit Card,52,M,Sunny,24,Tuesday,January,Q1
+2024-01-10,Widget C,1400,19,South,Sports,73.68,55.00,25.4,Premium,Sarah Johnson,ST002,None,PayPal,29,F,Cloudy,21,Wednesday,January,Q1
+2024-01-11,Widget B,800,10,East,Home & Garden,80.00,45.00,43.8,Regular,Mike Davis,ST003,Midweek Deal,Debit Card,41,M,Sunny,26,Thursday,January,Q1
+2024-01-12,Widget A,1350,17,West,Electronics,79.41,50.00,37.0,Premium,Lisa Brown,ST004,None,Credit Card,36,F,Partly Cloudy,22,Friday,January,Q1
+2024-01-13,Widget C,1200,15,North,Sports,80.00,55.00,31.3,VIP,John Smith,ST001,Lucky Friday,Cash,48,M,Cloudy,19,Saturday,January,Q1
+2024-01-14,Widget B,1000,14,South,Home & Garden,71.43,45.00,37.0,Regular,Sarah Johnson,ST002,Valentine Prep,PayPal,34,F,Rainy,17,Sunday,January,Q1
+2024-01-15,Widget A,1180,15,East,Electronics,78.67,50.00,36.4,Premium,Mike Davis,ST003,None,Credit Card,30,M,Sunny,25,Monday,January,Q1
+2024-01-16,Widget C,1320,17,West,Sports,77.65,55.00,29.2,Regular,Lisa Brown,ST004,Winter Sports,Debit Card,37,F,Cloudy,20,Tuesday,January,Q1
+2024-01-17,Widget B,920,12,North,Home & Garden,76.67,45.00,41.3,Premium,John Smith,ST001,None,Cash,43,M,Partly Cloudy,23,Wednesday,January,Q1
+2024-01-18,Widget A,1150,14,South,Electronics,82.14,50.00,39.1,VIP,Sarah Johnson,ST002,Tech Tuesday,Credit Card,26,F,Sunny,27,Thursday,January,Q1
+2024-01-19,Widget C,1280,16,East,Sports,80.00,55.00,31.3,Premium,Mike Davis,ST003,None,PayPal,40,M,Cloudy,21,Friday,January,Q1
+2024-01-20,Widget B,880,11,West,Home & Garden,80.00,45.00,43.8,Regular,Lisa Brown,ST004,Weekend Warrior,Debit Card,32,F,Rainy,18,Saturday,January,Q1
+2024-01-21,Widget A,1450,18,North,Electronics,80.56,50.00,38.0,Premium,John Smith,ST001,None,Credit Card,38,M,Sunny,24,Sunday,January,Q1
+2024-01-22,Widget D,1600,20,South,Automotive,80.00,60.00,25.0,VIP,Sarah Johnson,ST002,New Product Launch,Cash,44,M,Cloudy,22,Monday,January,Q1
+2024-01-23,Widget C,1100,14,East,Sports,78.57,55.00,30.0,Regular,Mike Davis,ST003,Winter Olympics,PayPal,29,F,Partly Cloudy,20,Tuesday,January,Q1
+2024-01-24,Widget B,750,9,West,Home & Garden,83.33,45.00,46.0,Premium,Lisa Brown,ST004,Flash Sale,Credit Card,35,M,Rainy,16,Wednesday,January,Q1
+2024-01-25,Widget A,1350,17,North,Electronics,79.41,50.00,37.0,VIP,John Smith,ST001,None,Debit Card,41,F,Sunny,26,Thursday,January,Q1
+2024-01-26,Widget D,1750,22,South,Automotive,79.55,60.00,24.5,Premium,Sarah Johnson,ST002,Friday Feature,PayPal,33,M,Cloudy,23,Friday,January,Q1
+2024-01-27,Widget C,1250,16,East,Sports,78.13,55.00,29.6,Regular,Mike Davis,ST003,Weekend Prep,Cash,37,F,Sunny,25,Saturday,January,Q1
+2024-01-28,Widget B,950,13,West,Home & Garden,73.08,45.00,38.5,Premium,Lisa Brown,ST004,None,Credit Card,39,M,Partly Cloudy,21,Sunday,January,Q1
+2024-01-29,Widget A,1200,15,North,Electronics,80.00,50.00,37.5,VIP,John Smith,ST001,Monday Motivation,Debit Card,46,F,Cloudy,19,Monday,January,Q1
+2024-01-30,Widget D,1550,19,South,Automotive,81.58,60.00,26.4,Premium,Sarah Johnson,ST002,None,PayPal,31,M,Rainy,17,Tuesday,January,Q1
+2024-01-31,Widget E,1800,24,North,Technology,75.00,55.00,26.7,VIP,John Smith,ST001,Month End Sale,Credit Card,42,F,Sunny,23,Wednesday,January,Q1
+2024-02-01,Widget A,1100,14,East,Electronics,78.57,50.00,36.4,Regular,Mike Davis,ST003,February Launch,Debit Card,29,M,Cloudy,19,Thursday,February,Q1
+2024-02-02,Widget B,1200,16,West,Home & Garden,75.00,45.00,40.0,Premium,Lisa Brown,ST004,None,Cash,35,F,Partly Cloudy,21,Friday,February,Q1
+2024-02-03,Widget C,980,12,South,Sports,81.67,55.00,32.7,VIP,Sarah Johnson,ST002,Weekend Special,PayPal,47,M,Rainy,16,Saturday,February,Q1
+2024-02-04,Widget D,1650,21,North,Automotive,78.57,60.00,23.6,Premium,John Smith,ST001,None,Credit Card,33,F,Sunny,24,Sunday,February,Q1
+2024-02-05,Widget E,1950,26,East,Technology,75.00,55.00,26.7,Regular,Mike Davis,ST003,Tech Monday,Debit Card,38,M,Cloudy,20,Monday,February,Q1
+2024-02-06,Widget A,1250,15,West,Electronics,83.33,50.00,40.0,VIP,Lisa Brown,ST004,Flash Sale,PayPal,44,F,Sunny,26,Tuesday,February,Q1
+2024-02-07,Widget B,870,11,South,Home & Garden,79.09,45.00,43.1,Premium,Sarah Johnson,ST002,None,Cash,31,M,Partly Cloudy,22,Wednesday,February,Q1
+2024-02-08,Widget C,1380,18,North,Sports,76.67,55.00,28.3,Regular,John Smith,ST001,Winter Sports,Credit Card,39,F,Cloudy,18,Thursday,February,Q1
+2024-02-09,Widget D,1720,22,East,Automotive,78.18,60.00,23.3,VIP,Mike Davis,ST003,None,Debit Card,45,M,Rainy,15,Friday,February,Q1
+2024-02-10,Widget E,1850,25,West,Technology,74.00,55.00,25.7,Premium,Lisa Brown,ST004,Weekend Tech,PayPal,36,F,Sunny,25,Saturday,February,Q1
+2024-02-11,Widget A,1150,14,South,Electronics,82.14,50.00,39.1,Regular,Sarah Johnson,ST002,Sunday Special,Credit Card,28,M,Cloudy,21,Sunday,February,Q1
+2024-02-12,Widget B,960,12,North,Home & Garden,80.00,45.00,43.8,VIP,John Smith,ST001,Valentine Week,Cash,41,F,Partly Cloudy,23,Monday,February,Q1
+2024-02-13,Widget C,1220,15,East,Sports,81.33,55.00,32.4,Premium,Mike Davis,ST003,None,Debit Card,34,M,Sunny,27,Tuesday,February,Q1
+2024-02-14,Widget D,2100,28,West,Automotive,75.00,60.00,20.0,VIP,Lisa Brown,ST004,Valentine Special,PayPal,50,F,Cloudy,19,Wednesday,February,Q1
+2024-02-15,Widget E,1750,23,South,Technology,76.09,55.00,27.7,Regular,Sarah Johnson,ST002,None,Credit Card,32,M,Rainy,17,Thursday,February,Q1

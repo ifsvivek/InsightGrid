@@ -7,7 +7,16 @@
 
 ### 📸 Demo
 
-Coming soon... (if the dev ever stops flirting with his AI assistant and finishes the frontend 😤)
+The application is ready for testing! Start the dev server with `npm run dev` and visit `http://localhost:5173`.
+
+**Current Status**: ✅ Core functionality implemented
+
+- AI-powered chart template generation
+- Multi-agent analysis pipeline
+- Full dataset chart rendering
+- Beautiful SvelteKit interface
+
+**Next**: Add your API keys to `.env` (see `.env.example`) to test with real AI agents.
 
 ---
 
@@ -24,13 +33,13 @@ Coming soon... (if the dev ever stops flirting with his AI assistant and finishe
 
 ### 🧰 Tech Stack
 
-| Layer        | Tech                                             |
-| ------------ | ------------------------------------------------ |
-| Frontend     | SvelteKit, TailwindCSS, Chart.js                 |
-| Backend      | LangGraph or LangChain, FastAPI (opt.)           |
-| LLMs         | GPT-4o, Gemini 1.5, Claude 3 (multi-agent blend) |
-| Data Parsing | Papaparse.js / Python CSV module                 |
-| Deployment   | Vercel, Netlify, or your custom edge CDN         |
+| Layer        | Tech                                     |
+| ------------ | ---------------------------------------- |
+| Frontend     | SvelteKit, TailwindCSS, Chart.js         |
+| Backend      | LangGraph or LangChain                   |
+| LLMs         | Groq Llamma 3.3 70b, Gemini 2.5-flash    |
+| Data Parsing | Papaparse.js                             |
+| Deployment   | Vercel, Netlify, or your custom edge CDN |
 
 ---
 
@@ -59,20 +68,18 @@ Coming soon... (if the dev ever stops flirting with his AI assistant and finishe
 ### 🧪 Running Locally
 
 ```bash
-git clone https://github.com/your-user/insightgrid
-cd insightgrid
+git clone https://github.com/ifsvivek/InsightGrid
+cd InsightGrid
 npm install
-npm dev
+npm run dev
 ```
 
-You'll need to add an `.env` with your OpenAI, Claude, or Gemini API keys.
-Use a backend (optional) to manage file uploads + agent logic if going full LangChain.
+You'll need to add an `.env` with your Groq or Gemini API keys.
 
 ---
 
 ### 🧃 Future Ideas
 
-- Voice interface: "Hey InsightGrid, show me user churn from Jan to May!"
 - Fine-tuned agents: Use RAG to build domain-specific analysts
 - Timeline builder: Animated data story over time
 - PDF export: Report-style dashboard outputs for stakeholders
